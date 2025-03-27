@@ -7,8 +7,7 @@ A carpooling **Android app** that connects users for **shared rides**, reducing 
 
 ## 🛠 Tech Stack  
 - **Language:** Java (Android)  
-- **Backend:** Firebase / Node.js (Optional)  
-- **Google Maps API** for navigation  
+- **Backend:** Firebase  
 - **Gradle** for build automation  
 
 ## 📦 Installation  
