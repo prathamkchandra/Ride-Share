@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Display Username -->
+    <TextView
+        android:id="@+id/UsernameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Display Email -->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Profile Photo -->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_profile_placeholder"
+        android:contentDescription="Profile Picture"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Button to Upload Profile Picture -->
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Profile Picture"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+
+    <!-- Phone Number Input -->
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Vehicle Type Input -->
+    <EditText
+        android:id="@+id/vehicleTypeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Type"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Gender Input -->
+    <EditText
+        android:id="@+id/genderEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Vehicle Number Input -->
+    <EditText
+        android:id="@+id/vehicleNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vehicle Number"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+
+    <!-- Save Details Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Details"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

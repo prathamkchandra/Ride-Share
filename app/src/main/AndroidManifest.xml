@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Permissions to access camera and storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sample">
+        <activity
+            android:name=".UserProfileActivity1"
+            android:exported="false" />
+        <!-- Basic Views Activity -->
+        <activity
+            android:name=".BasicViewsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Sample" /> <!-- Splash Activity (Launcher) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" /> <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" /> <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" /> <!-- User Profile Activity -->
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="true" />
+        <activity android:name=".RoleSelectionActivity" />
+        <activity android:name=".SourceDestinationActivity" />
+        <activity android:name=".MatchedUsersActivity" />
+    </application>
+
+</manifest>

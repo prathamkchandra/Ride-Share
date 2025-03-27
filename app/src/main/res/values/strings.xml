@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RideShare</string>
+    <string name="login_error">Invalid username or password</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="profile_image_description">Profile Image</string>
+    <string name="lorem_ipsum">
+        a
+    </string>
+
+    <string name="change_profile_picture">Change Profile Picture</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="edit_profile">Edit Profile</string>
+
+
+</resources>

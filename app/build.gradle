@@ -1,0 +1,120 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // For Firebase
+}
+
+android {
+    namespace 'com.example.sample' // Specify the namespace here
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.sample"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.activity:activity:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.core:core:1.10.1'
+
+
+    // Firebase dependencies
+    implementation platform("com.google.firebase:firebase-bom:30.2.0")
+    implementation "com.google.firebase:firebase-auth"
+    implementation 'com.google.firebase:firebase-firestore:25.1.1' // Firebase Firestore
+
+    implementation 'com.google.firebase:firebase-database:20.0.5'  // Add Firebase Realtime Database dependency
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+
+    // Navigation dependencies for Navigation Component
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.0' // Navigation Fragment
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.0' // Navigation UI
+
+    // Kotlin standard libraries
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22"
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+
+    // Test dependencies
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+
+        // Firebase Storage dependency
+        implementation 'com.google.firebase:firebase-storage:20.1.0'
+
+// Import the Firebase BOM
+    implementation platform('com.google.firebase:firebase-bom:32.2.2') // Use the latest BOM version
+
+// Add Firebase modules without specifying versions
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-appcheck-playintegrity'
+
+    // Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+
+    // Firebase Realtime Database
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+
+    // Firebase Storage
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+
+    implementation 'androidx.annotation:annotation:1.6.0'
+
+
+
+    implementation ('com.google.firebase:firebase-firestore') {
+        exclude group: 'com.google.firebase', module: 'firebase-appcheck'
+    }
+
+
+
+
+
+
+    // Add Picasso dependency
+    implementation 'com.squareup.picasso:picasso:2.8'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+} // Apply the Google Services plugin for Firebase
